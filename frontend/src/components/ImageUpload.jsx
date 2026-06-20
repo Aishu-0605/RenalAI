@@ -51,7 +51,7 @@ const ImageUpload = ({ patientData, onAnalysis }) => {
 
     try {
       // Assuming backend runs on 5000
-      const response = await axios.post('http://localhost:5000/api/predict', formData, {
+      const response = await axios.post('https://renalai.onrender.com/api/predict', formData, {
         headers: { 'Content-Type': 'multipart/form-data' }
       });
       
